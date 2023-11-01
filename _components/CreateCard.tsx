@@ -5,7 +5,7 @@ const CreateCard = () => {
   function getDate(): string {
     const today = new Date();
     const res =
-      today.getMonth() + "/" + today.getDate() + "/" + today.getFullYear();
+      (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
     return res;
   }
   return (
